@@ -1,12 +1,3 @@
-console.log('hello from the other side...');
-
-// fetch("/api")
-//   .then((response) => response.json())
-//   .then((data) => console.log(data))
-//   .catch((error) => console.error("Error:", error));
-
-// .catch((error) => console.error("Error:", error));
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const msg1 = document.querySelector('#msg-1');
