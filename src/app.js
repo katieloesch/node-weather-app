@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 // const cors = require('cors');
-const { createProxyMiddleware } = require('http-proxy-middleware');
+// const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
@@ -16,16 +16,16 @@ const port = process.env.PORT || 3000;
 
 // app.use(cors());
 // Proxy configuration
-app.use(
-  '/api',
-  createProxyMiddleware({
-    target: 'http://puzzle.mead.io/puzzle',
-    changeOrigin: true,
-    pathRewrite: {
-      '^/api': '', // Remove the /api/puzzle prefix when forwarding
-    },
-  })
-);
+// app.use(
+//   '/api',
+//   createProxyMiddleware({
+//     target: 'http://puzzle.mead.io/puzzle',
+//     changeOrigin: true,
+//     pathRewrite: {
+//       '^/api': '', // Remove the /api/puzzle prefix when forwarding
+//     },
+//   })
+// );
 
 //define paths for express config
 const publicDirPath = path.join(__dirname, '../public');
