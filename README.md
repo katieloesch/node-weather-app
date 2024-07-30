@@ -4,6 +4,9 @@
 
 This application uses the [weatherstack](https://weatherstack.com/) and [mapbox](https://www.mapbox.com/) APIs to provide the user with weather information for any location they enter.
 
+<img src='./assets/screenshot_1.png' width=400/>
+<img src='./assets/screenshot_2.png' width=400/>
+
 ### Deployment link
 
 - https://katieloesch-weather-app-a328b6689b00.herokuapp.com/
