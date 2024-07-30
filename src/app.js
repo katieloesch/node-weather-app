@@ -1,20 +1,20 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const cors = require('cors');
+// const cors = require('cors');
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express();
-const port = process.env().PORT || 3000;
+const port = process.env.PORT || 3000;
 
 // var corsOptions = {
 //   origin: "http://localhost:3000",
 // };
 
-app.use(cors());
+// app.use(cors());
 // Proxy configuration
 app.use(
   '/api',
