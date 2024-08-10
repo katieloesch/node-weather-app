@@ -20,7 +20,7 @@ const forecast = (latitude, longitude, cb) => {
 
       cb(
         undefined,
-        `${current.weather_descriptions[0]}- ${current.temperature}°C   | cloud cover: ${current.cloudcover}%   |   humidity: ${current.humidity}%   |   wind speed: ${current.wind_speed} km/h`
+        `${current.weather_descriptions[0]} - ${current.temperature}°C   | cloud cover: ${current.cloudcover}%   |   humidity: ${current.humidity}%   |   wind speed: ${current.wind_speed} km/h`
       );
     }
   });

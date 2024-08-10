@@ -26,7 +26,7 @@ npm install
 - after installing depencies, start the app by running
 
 ```zsh
-node src/app.js
+npm run dev
 ```
 
 - dependencies
