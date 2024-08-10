@@ -37,6 +37,10 @@ footer {
   flex-grow: 1;
 }
 
+.main-content img {
+  width: 30%;
+}
+
 .portrait {
   width: 250px;
 }
