@@ -1,31 +1,12 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-// const cors = require('cors');
-// const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
 const app = express();
-const port = process.env.PORT || 3000;
-
-// var corsOptions = {
-//   origin: "http://localhost:3000",
-// };
-
-// app.use(cors());
-// Proxy configuration
-// app.use(
-//   '/api',
-//   createProxyMiddleware({
-//     target: 'http://puzzle.mead.io/puzzle',
-//     changeOrigin: true,
-//     pathRewrite: {
-//       '^/api': '', // Remove the /api/puzzle prefix when forwarding
-//     },
-//   })
-// );
+const port = process.env.PORT || 5100;
 
 //define paths for express config
 const publicDirPath = path.join(__dirname, '../public');
@@ -90,7 +71,7 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about', {
-    title: 'About Me',
+    title: 'About',
     name: 'Katie',
   });
 });
